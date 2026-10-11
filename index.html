@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReBuildX | AI-Powered Construction Material Exchange</title>
+  <meta name="description" content="Sell, buy, and reuse leftover construction materials locally. Save up to 40% on building supplies and reduce landfill waste.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .video-glow {
+      box-shadow: 0 0 50px -15px rgba(249, 115, 22, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#0a0f1d] text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= CLEAN MINIMAL HEADER ================= -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#0a0f1d]/85 backdrop-blur-md border-b border-white/5 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-amber-500 flex items-center justify-center shadow-md">
+          <i data-lucide="layers" class="w-5 h-5 text-white"></i>
+        </div>
+        <span class="font-extrabold text-lg text-white tracking-tight">
+          ReBuild<span class="text-brand-500">X</span>
+        </span>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <a href="#benefits" class="hover:text-white transition">Benefits</a>
+        <a href="#how-it-works" class="hover:text-white transition">How It Works</a>
+        <a href="#who-it-is-for" class="hover:text-white transition">Who It's For</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+
+      <!-- Primary CTA Button -->
+      <a href="#early-access" class="px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-500 hover:bg-brand-600 text-white shadow-lg shadow-brand-500/20 transition">
+        Get Early Access
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= SPLIT-SCREEN HERO SECTION ================= -->
+  <section class="relative min-h-[92vh] flex items-center pt-28 pb-16 px-4 sm:px-6 overflow-hidden">
+    <!-- Ambient Background Glows -->
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto w-full">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- LEFT SIDE: MATTER & VALUE PROPOSITION -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          <!-- Hyperlocal Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/15 border border-brand-500/25 text-brand-300 text-xs font-semibold shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+            <span>Hyperlocal Material Exchange • 10–20 km</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.12]">
+            Turn Leftover Building Materials Into 
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-amber-300 to-orange-500 block sm:inline">
+              Recovered Cash.
+            </span>
+          </h1>
+
+          <!-- Value Explanation Subtitle -->
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-xl">
+            Don't let usable cement bags, TMT steel, bricks, tiles, or pipes go to waste. Connect with nearby contractors, builders, and homeowners to sell surplus supplies and save up to 40% on materials.
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 max-w-md">
+            <a href="#early-access" class="px-7 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-500 hover:bg-brand-600 text-white shadow-xl shadow-brand-500/25 transition text-center flex items-center justify-center gap-2">
+              <span>Join Early Access Pilot</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#how-it-works" class="px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-white/5 hover:bg-white/10 text-white border border-white/10 transition text-center flex items-center justify-center gap-2">
+              <i data-lucide="play-circle" class="w-4 h-4 text-brand-400"></i>
+              <span>How It Works</span>
+            </a>
+          </div>
+
+          <!-- 3-Metric Proof Bar -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-white/10 max-w-lg">
+            <div>
+              <div class="text-xl sm:text-2xl font-extrabold text-white">Up to 40%</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Lower Material Cost</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-extrabold text-brand-400">10–20 km</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Nearby Pickup Radius</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl font-extrabold text-emerald-400">Zero Waste</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">Landfill Diversion</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: VIDEO SHOWCASE CONTAINER -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-3xl overflow-hidden border border-white/15 bg-slate-900 video-glow shadow-2xl group">
+            <!-- Looping Video -->
+            <div class="aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] w-full overflow-hidden relative">
+              <video id="bgVideo" autoplay loop muted playsinline class="w-full h-full object-cover">
+                <source src="gemini_generated_video_6224a249.mp4" type="video/mp4">
+              </video>
+              
+              <!-- Subtle Contrast Gradient Overlay -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30 pointer-events-none"></div>
+
+              <!-- Top Floating Video Badge -->
+              <div class="absolute top-4 left-4 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs text-white">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-medium text-[11px]">Site Surplus Exchange</span>
+              </div>
+
+              <!-- Play/Pause Button in Top Right -->
+              <button onclick="toggleVideoPlayback()" title="Pause/Play Video" class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white hover:text-brand-400 flex items-center justify-center transition">
+                <i data-lucide="pause" id="videoPlayPauseIcon" class="w-3.5 h-3.5 text-brand-400"></i>
+              </button>
+
+              <!-- Bottom Floating Material Lot Overlay -->
+              <div class="absolute bottom-4 inset-x-4 z-10 p-3.5 rounded-2xl bg-black/75 backdrop-blur-md border border-white/15 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0">
+                    <i data-lucide="package-check" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-white">Verified Surplus Batch</h4>
+                    <p class="text-[10px] text-emerald-400 font-medium">Hyperlocal 10–20 km • Direct Site Pickup</p>
+                  </div>
+                </div>
+                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-1 rounded bg-brand-500 text-white">
+                  Active
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-[11px] text-slate-500 mt-3 flex items-center justify-center gap-1.5">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-400"></i>
+            <span>Verified condition &lot availability before pickup</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KEY FEATURES & BENEFITS ================= -->
+  <section id="benefits" class="py-20 bg-[#070b15] border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-brand-500 text-xs font-bold uppercase tracking-wider">Why ReBuildX</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Smarter Than General Marketplaces</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Purpose-built for construction contractors, builders, and renovators.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Benefit 1 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-brand-500/15 text-brand-400 flex items-center justify-center mb-4">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Hyperlocal Matching</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Construction supplies are heavy. Find buyers and sellers within a 10–20 km radius for easy, same-day pickup.
+          </p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="clipboard-check" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Construction-Grade Checks</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            List exact grades and conditions (e.g. 53-grade OPC cement, dry-sealed bags, Fe550 steel rods) so buyers get genuine quality.
+          </p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-blue-500/15 text-blue-400 flex items-center justify-center mb-4">
+            <i data-lucide="truck" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Transport Coordination</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Connect directly with local tempo and mini-truck drivers for hassle-free site-to-site transportation.
+          </p>
+        </div>
+
+        <!-- Benefit 4 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center mb-4">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Fair Price Guidance</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Get benchmark price recommendations so sellers get fair cash returns and buyers save 20% to 40% below wholesale retail.
+          </p>
+        </div>
+
+        <!-- Benefit 5 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-purple-500/15 text-purple-400 flex items-center justify-center mb-4">
+            <i data-lucide="boxes" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Live Inventory Tracking</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Real-time batch quantity updates prevent buyers from traveling to sites for materials that are already sold out.
+          </p>
+        </div>
+
+        <!-- Benefit 6 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10">
+          <div class="w-11 h-11 rounded-xl bg-teal-500/15 text-teal-400 flex items-center justify-center mb-4">
+            <i data-lucide="leaf" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Cut Debris & Landfill Waste</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Eliminate expensive disposal skips and debris hauling fees while reducing carbon emissions from virgin material manufacturing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS (CLEAN 3-STEP INFOGRAPHIC) ================= -->
+  <section id="how-it-works" class="py-20 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-brand-500 text-xs font-bold uppercase tracking-wider">How It Works</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Simple, Fast 3-Step Exchange</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Recover value from your job site leftover materials in under 48 hours.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-brand-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-brand-500/20 mb-4">
+            1
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Snap & List</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Take photos of leftover cement, steel rods, bricks, or tiles. Enter quantity, condition, location, and your expected price.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-brand-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-brand-500/20 mb-4">
+            2
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Nearby Match</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Buyers within 10–20 km discover your listing. They message directly to confirm specifications and lot quantity.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-2xl bg-brand-500 text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-brand-500/20 mb-4">
+            3
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">Pickup & Handover</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Buyer arranges direct pickup or connects with local mini-truck drivers. You clear site storage and recover cash.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHO IT'S FOR ================= -->
+  <section id="who-it-is-for" class="py-20 bg-[#070b15] border-t border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-xl mx-auto mb-14">
+        <span class="text-brand-500 text-xs font-bold uppercase tracking-wider">Target Users</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Built For The Construction Community</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Audience 1 -->
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-3">
+            <i data-lucide="hard-hat" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">Contractors & Builders</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mt-2">
+            Sell leftover materials after project completion, eliminate storage clutter, and avoid expensive dumpster disposal fees.
+          </p>
+        </div>
+
+        <!-- Audience 2 -->
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center mb-3">
+            <i data-lucide="home" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">Homeowners & Renovators</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mt-2">
+            Buy quality surplus materials at 20–40% discounts without mandatory wholesale bulk minimums, and sell excess renovation tiles or paint.
+          </p>
+        </div>
+
+        <!-- Audience 3 -->
+        <div class="p-6 rounded-2xl bg-white/[0.03] border border-white/10">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-3">
+            <i data-lucide="truck" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-1">Local Transporters</h3>
+          <p class="text-xs text-slate-400 leading-relaxed mt-2">
+            Get regular short-haul 5–15 km tempo and pickup delivery bookings connecting local buyers and construction sites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EARLY ACCESS LEAD CAPTURE FORM (ADVERTISEMENT CTA) ================= -->
+  <section id="early-access" class="py-20 relative">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="glass-card p-8 sm:p-10 rounded-3xl border border-brand-500/30 text-center">
+        <span class="text-brand-500 text-xs font-bold uppercase tracking-wider">Join Phase 1 Pilot</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">Be Among The First In Your Area</h2>
+        <p class="text-slate-300 text-xs sm:text-sm mt-2 max-w-lg mx-auto">
+          We are launching our initial pilot in selected local zones. Register your interest to list or buy surplus materials with zero platform fees.
+        </p>
+
+        <!-- Clean Form -->
+        <form onsubmit="handleAdFormSubmit(event)" class="mt-8 space-y-3.5 text-left max-w-lg mx-auto">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name *</label>
+            <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp *</label>
+              <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">I Want To *</label>
+              <select required class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+                <option value="seller">Sell Surplus Materials</option>
+                <option value="buyer">Buy Discounted Materials</option>
+                <option value="both">Both Buy & Sell</option>
+                <option value="transporter">Provide Local Transport</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">City or Area Pin Code *</label>
+            <input type="text" required placeholder="e.g. 560001 / Bangalore" class="w-full bg-slate-900/90 border border-white/15 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-brand-500">
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm shadow-xl shadow-brand-500/25 transition">
+            Request Early Access (100% Free)
+          </button>
+        </form>
+
+        <p class="text-[11px] text-slate-500 mt-4">
+          No spam guarantee. We will connect with you via WhatsApp to verify your pilot area.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="py-16 bg-[#070b15] border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <span class="text-brand-500 text-xs font-bold uppercase tracking-wider">Contact & Inquiries</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Have Questions or Want to Partner?</h2>
+      <p class="text-slate-400 text-xs sm:text-sm mt-2">Reach out directly to our founding team.</p>
+
+      <div class="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto mt-8 text-left">
+        <div class="p-4 rounded-xl glass-card border border-white/10 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="text-[11px] text-slate-400 block">Email Us</span>
+            <a href="mailto:contact@rebuildx.in" class="text-xs font-bold text-white hover:text-brand-400 transition">contact@rebuildx.in</a>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl glass-card border border-white/10 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="text-[11px] text-slate-400 block">WhatsApp & Helpline</span>
+            <a href="tel:+919876543210" class="text-xs font-bold text-white hover:text-emerald-400 transition">+91 98765 43210</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLEAN FOOTER ================= -->
+  <footer class="py-8 bg-[#050811] border-t border-white/5 text-xs text-slate-500 text-center">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded bg-brand-500 flex items-center justify-center text-white">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+        </div>
+        <span class="font-bold text-white">ReBuildX Platform</span>
+      </div>
+      <p class="text-[11px]">Empowering sustainable construction reuse & waste reduction.</p>
+      <p class="text-[11px]">&copy; 2026 ReBuildX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden">
+    <div class="px-5 py-3 rounded-xl bg-emerald-600 text-white text-xs font-semibold shadow-2xl flex items-center gap-2">
+      <i data-lucide="check-circle" class="w-4 h-4"></i>
+      <span>Thank you! Your early access request has been registered.</span>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const bgVideo = document.getElementById('bgVideo');
+    const videoIcon = document.getElementById('videoPlayPauseIcon');
+
+    function toggleVideoPlayback() {
+      if (!bgVideo) return;
+      if (bgVideo.paused) {
+        bgVideo.play();
+        videoIcon.setAttribute('data-lucide', 'pause');
+      } else {
+        bgVideo.pause();
+        videoIcon.setAttribute('data-lucide', 'play');
+      }
+      lucide.createIcons();
+    }
+
+    function handleAdFormSubmit(e) {
+      e.preventDefault();
+      const toast = document.getElementById('toast');
+      toast.classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
