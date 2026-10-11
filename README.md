@@ -6,6 +6,22 @@
 
 ---
 
+## 📽️ Product Showcase Video
+
+https://github.com/user-attachments/assets/ or view directly:
+
+https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4
+
+<p align="center">
+  <video src="https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4" controls="controls" muted="muted" autoplay="autoplay" loop="loop" width="100%" style="border-radius: 12px; max-height: 480px;">
+    <a href="https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4">▶ Click here to view/download the video</a>
+  </video>
+</p>
+
+> 🎬 **Direct File Link**: [gemini_generated_video_6224a249.mp4](gemini_generated_video_6224a249.mp4)
+
+---
+
 ## 🏗️ Project Overview
 
 Construction projects frequently leave behind usable materials like cement bags, steel rebar, bricks, tiles, and pipes. Sellers often struggle to find immediate buyers and end up paying hauling fees, while other local builders and homeowners need affordable materials nearby.
@@ -34,7 +50,7 @@ Construction projects frequently leave behind usable materials like cement bags,
 ```text
 ├── index.html                           # Main marketing landing page
 ├── gemini_generated_video_6224a249.mp4  # Looping showcase video asset
-└── README.md                            # Project documentation
+└── README.md                            # Project documentation with video preview
 ```
 
 ---
