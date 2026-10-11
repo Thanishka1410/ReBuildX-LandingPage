@@ -6,19 +6,13 @@
 
 ---
 
-## 📽️ Product Showcase Video
-
-https://github.com/user-attachments/assets/ or view directly:
-
-https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4
+## 📽️ Platform Showcase Video
 
 <p align="center">
-  <video src="https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4" controls="controls" muted="muted" autoplay="autoplay" loop="loop" width="100%" style="border-radius: 12px; max-height: 480px;">
-    <a href="https://github.com/Thanishka1410/ReBuildX-LandingPage/raw/main/gemini_generated_video_6224a249.mp4">▶ Click here to view/download the video</a>
-  </video>
+  <img src="demo.gif" alt="ReBuildX Platform Demo Video" width="100%" style="border-radius: 14px; max-width: 720px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);" />
 </p>
 
-> 🎬 **Direct File Link**: [gemini_generated_video_6224a249.mp4](gemini_generated_video_6224a249.mp4)
+> 🎬 **Original HD MP4**: [gemini_generated_video_6224a249.mp4](gemini_generated_video_6224a249.mp4)
 
 ---
 
