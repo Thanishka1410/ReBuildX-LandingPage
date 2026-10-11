@@ -75,3 +75,11 @@ Then open `http://localhost:3000` in your browser.
 3. Under **Build and deployment** > **Branch**, select `main` (or `master`) and `/ (root)`.
 4. Click **Save**. Your site will be live at:
    `https://thanishka1410.github.io/ReBuildX-LandingPage/`
+
+---
+
+## 📬 Contact & Inquiries
+
+- **Email**: [thanishka@rebuildx.in](mailto:thanishka@rebuildx.in)
+- **Phone / WhatsApp**: [+91 76740 11281](tel:+917674011281)
+
