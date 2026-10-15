@@ -12,7 +12,6 @@
   <img src="demo.gif" alt="ReBuildX Platform Demo Video" width="100%" style="border-radius: 14px; max-width: 720px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);" />
 </p>
 
-> 🎬 **Original HD MP4**: [gemini_generated_video_6224a249.mp4](gemini_generated_video_6224a249.mp4)
 
 ---
 
