@@ -76,3 +76,4 @@ Then open `http://localhost:3000` in your browser.
 - **Email**: [thanishka@rebuildx.in](mailto:thanishka@rebuildx.in)
 - **Phone / WhatsApp**: [+91 76740 11281](tel:+917674011281)
 
+Link : https://thanishka1410.github.io/ReBuildX-LandingPage
